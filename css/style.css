@@ -1,0 +1,458 @@
+:root {
+    /*Variables*/
+    --font-family: "DM Sans", sans-serif;
+    --normal-font: 400;
+    --bold-font: 700;
+    --more-bold-font: 900;
+    --borders: 2px;
+    --radius-borders:10px;
+    --background-colour:#1A124D;
+    --primary-colour:#9bd8e9;
+    --secondary-colour: #00ff22;
+    --primary-shadow: #ebebeb;
+    --secondary-shadow:#B27F48;
+    --text-links:#007910;
+    --bottom-margin:0.5rem;
+    --bottom-margin-other: 1rem;
+    --line-height: 1.7rem;
+    --transition:0.9s;
+    --page-padding: 1rem 5rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* General Page CSS */
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family:var(--font-family);
+    overflow-x: hidden;
+}
+
+footer {
+    background-color: var(--primary-colour);
+    text-align: center;
+    color:var(--background-colour);
+    padding:2rem;
+}
+
+ul {
+    list-style-type:none;
+}
+a {
+    text-decoration:none;
+    color: var(--text-links);
+}
+
+a:hover {
+    color: var(--background-colour);
+}
+
+/* Navigation bar CSS */
+
+#navbar-container-mobile {
+    display: none;
+}
+.nav-link-mobile {
+    display: none;
+}
+
+#navbar-container {
+    position: sticky;
+    display:flex;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 3.5rem;
+    background-color: var(--background-colour);
+    box-shadow:0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+    color: var(--primary-colour);
+}
+nav ul {
+    display:flex;
+    gap: 1.9rem;
+}
+nav ul li {
+    font-weight: var(--bold-font);
+}
+nav a {
+    color: var(--primary-colour);
+    transition: var(--transition);
+}
+nav a:hover {
+    color: var(--secondary-colour);
+    border-bottom: 2px solid var(--secondary-colour);
+}
+#hamburger-menu {
+    cursor: pointer;
+    display:none;
+}
+#profile-img {
+    border-radius: 50%;
+    width:100px;
+    height:100px;
+    border: var(--borders) solid;
+    border-color: var(--primary-shadow);
+    transition: 1s ease-out;
+}
+
+#profile-img:hover {
+    width:90px;
+    height:90px;
+    transition: 1s ease-out;
+}
+
+/* Hero Section CSS */
+.hero-section {
+    scroll-margin-top: 150px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:2.5rem;
+    max-width: 68.75rem;
+    margin:auto;
+    padding:var(--page-padding);
+}
+#hero-img {
+    height: 30rem;
+    width: 66.66rem;
+    border-radius: var(--radius-borders);
+}
+#intro {
+    width: rem;
+    padding: 0.7rem;
+    border-radius: var(--radius-borders);
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+}
+
+
+
+#intro h2 {
+    margin-bottom: var(--bottom-margin);
+}
+
+#intro p {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+
+}
+
+/*More about me Section CSS */
+
+#more-about-me {
+    scroll-margin-top: 150px;
+    background-color: var(--primary-colour);
+    padding: var(--page-padding);
+}
+#more-about-me-div {
+    width: 100%;
+    
+}
+
+#more-about-me h2 {
+   margin-bottom: var(--bottom-margin);
+   text-align: center;
+}
+
+#more-about-me p {
+    line-height: var(--line-height);
+    padding: 0.4rem;
+}
+
+
+/* Skills section CSS */
+.skills {
+    scroll-margin-top: 150px;
+    max-width: 70rem;
+    margin:auto;
+    text-align:center;
+    margin-top: 2.5rem;
+}
+.skills #skills-title {
+    margin-bottom: 1rem;
+}
+
+#languages-title {
+    padding:2rem;
+}
+
+.row1 {
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    flex-direction: row;
+}
+.row2 {
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    flex-direction: row;
+}
+.skills-div i {
+    padding:1.25rem;
+}
+
+.icon-skill {
+    font-size: 5rem;
+}
+
+.icon-skill-img {
+    margin:1rem;
+    width: 5rem;
+    height: 5rem;
+}
+
+.skill-cell {
+    margin:auto;
+    float:left;
+    padding: 1.25rem;
+}
+
+/*Projects Section */
+
+.projects {
+    scroll-margin-top: 150px;
+    background-color: var(--primary-colour);
+    padding:32px 0;
+    margin-top:2rem;
+    width: 100%;
+    /*max-width: 70rem;
+    margin:auto;
+    text-align:center;
+    margin-top: 2.5rem;*/
+}
+.projects #projects-title, .project-title{
+    text-align: center;
+    font-weight: var(--bold-font);
+    /*margin-bottom: 1rem;*/
+}
+
+#project-description {
+    padding:3rem;
+}
+
+
+.projects-div {
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    align-content:space-between;
+}
+
+.project-cell {
+    width:15rem ;
+    word-wrap: break-word;
+    padding:1rem;
+    margin-top:5rem !important;
+    margin: auto;
+    width:15rem ;
+    word-wrap: break-word;
+    background-color: var(--primary-shadow);
+    border-radius: var(--radius-borders);
+}
+
+
+.project-img {
+    padding:1rem;
+    width:100%;
+    height:100%;
+    border-radius: var(--radius-borders);
+    transition:1s ease-out 100ms;
+}
+.project-img:hover {
+    border-radius: 100rem;
+}
+
+/* Contact section CSS*/
+#contactme {
+    scroll-margin-top: 150px;
+    margin:2rem;
+}
+#contactme h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+
+.contact-form-div {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: var(--radius-borders);
+    box-shadow:0 3px 10px var(--secondary-shadow) ;
+}
+
+.input-container label{
+    line-height:2em;
+    font-weight: var(--bold-font);
+    
+}
+.input-container textarea {
+    min-height:6.25rem;
+    font-size:16px;
+    
+}
+
+.inputs {
+    width:100%;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    border: 0.2em solid;
+    transition: var(--transition);
+}
+
+.inputs:focus {
+    border:0.2em solid var(--primary-colour)
+}
+
+
+#button-container {
+    display:flexbox;
+    align-items: center;
+}
+
+#form-button {
+    text-align: center;
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    background-color:white;
+    border: 0.2em solid;
+    border-radius:5px;
+    font-weight: var(--bold-font);
+    font-size:16px;
+    transition: var(--transition);
+}
+#form-button:hover {
+    background-color: var(--primary-colour);
+    cursor:pointer;
+}
+
+
+/* Find me section CSS*/
+
+
+#findme {
+    scroll-margin-top: 150px;
+    background-color: var(--primary-colour);
+    padding:32px 0;
+    margin-top:2rem;
+    /*max-width: 70rem;
+    margin:auto;
+    text-align:center;
+    margin-top: 2.5rem;*/
+}
+
+#findme h2 {
+    text-align: center;
+}
+#findme #findme-title{
+    text-align: center;
+    font-weight: var(--bold-font);
+    /*margin-bottom: 1rem;*/
+}
+
+#findme-tag {
+    padding:3rem;
+}
+
+
+.findme-div {
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+}
+
+.findme-cell {
+    width:15rem ;
+    word-wrap: break-word;
+    padding:1rem;
+    margin:5rem;
+    width:15rem ;
+    word-wrap: break-word;
+    background-color: var(--primary-shadow);
+    border-radius: var(--radius-borders);
+}
+.findme-img {
+    padding:1rem;
+    width:100%;
+    height:100%;
+    border-radius: var(--radius-borders);
+    transition:1s ease-out 100ms;
+}
+.findme-img:hover {
+    border-radius: 100rem;
+}
+
+/* Mobile Responsivity*/
+@media screen and (max-width: 720px) {
+    /* Navigation menu */
+    nav {
+        
+    }
+    #profile-img {
+        display: none;
+    }
+    nav ul {
+        position:fixed;
+        background-color: var(--background-colour);
+        flex-direction: column;
+        top: 86px;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.5 ease-out;
+    }
+    nav ul li {
+        margin:8px;
+    }
+
+    #navbar {
+        border-radius: var(--radius-borders);
+    }
+
+    #hamburger-menu {
+        display: block;
+    }
+    nav ul.show {
+        transform: translateX(0);
+    }
+
+    /* Hero menu */
+
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        gap:0;
+        margin-top: -4rem;
+    }   
+    #hero-img {
+        padding:1.5rem 1rem;
+        width:26rem;
+        height: 20rem;
+        border-radius: var(--radius-borders);
+    }
+
+    #intro-text {
+        width:20rem;
+    }
+    /* More about me section */
+    #more-about-me {
+        padding:2rem;
+    }
+
+}
