@@ -5,80 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oliver Souter</title>
-
     <link rel="stylesheet" href="./css/style.css">
-
     <link rel="apple-touch-icon" sizes="200x200" href="">
-
     <link rel="icon" type="image/png" sizes="32x32" href="">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
     <!--Scripts-->
     <script src="./javascript/site-scripts.js" defer></script>
     <script src="https://kit.fontawesome.com/a9e5775e06.js" crossorigin="anonymous"></script>
 
 </head>
 <body id="body">
-    
     <!--Navigation menu-->
     <nav id="navbar-container">
-        <button onclick="toggleMenu()" id="hamburger-menu"><i class="fa-solid fa-bars"></i></button>
-        <img id="profile-img" alt ="Picture of Oliver" loading="lazy" src="./images/profile.jpg">
+        <a onclick="toggleMenu()" id="hamburger-menu"><i class="fa-solid fa-bars"></i></a>
+        <img id="profile-img" alt="Picture of Oliver" loading="lazy" src="./images/profile.jpg">
         <h1>Oliver Souter</h1>
         <ul id="navbar">
-            <li><a class="nav-link" href="#about">About me</a></li>
-            <li><a class="nav-link" href="#skills">My skills</a></li>
-            <li><a class="nav-link" href="#projects">Projects</a></li>
-            <li><a class="nav-link" href="#contactme">Contact me</a></li>
-            <li><a class="nav-link" href="#findme">Where to find me</a></li>
+            <li><a class="nav-link" onclick="hideMenu()" href="#about">About me</a></li>
+            <li><a class="nav-link" onclick="hideMenu()" href="#skills">My skills</a></li>
+            <li><a class="nav-link" onclick="hideMenu()" href="#projects">Projects</a></li>
+            <li><a class="nav-link" onclick="hideMenu()" href="#contactme">Contact me</a></li>
+            <li><a class="nav-link" onclick="hideMenu()" href="#findme">Where to find me</a></li>
         </ul>
-        
     </nav>
-    <!--Navigation menu (mobile)-->
-    <!-- <nav id="navbar-container-mobile">
-        <ul>
-            <li><a class="nav-link-mobile" href="#about">About</a></li>
-            <li><a class="nav-link-mobile" href="#skills">Skills</a></li>
-            <li><a class="nav-link-mobile" href="#projects">Projects</a></li>
-            <li><a class="nav-link-mobile" href="#contactme">Contact</a></li>
-            <li><a class="nav-link-mobile" href="#findme">Links</a></li>
-            <button id="hamburger-menu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </ul>
-    </nav> -->
-
     <!-- Hero Section -->
     <section class="hero-section" id="about">
         <img id="hero-img" src="./images/snowboard.jpg" alt="Picture of Oliver" loading="lazy">
         <div id="intro" class="animate__animated animate__pulse">
             <h2 id="intro-title">Hi, I'm Oliver.</h2>
-            <p id="intro-text">And I'm a programmer who loves to solve problems creatively. I also enjoy snowboarding and baking, constantly seeking out new challenges and ways to grow. Whether I'm typing away at my keyboard or experimenting with new recipes, I'm always pushing myself to learn and explore new things.</p>
+            <p id="intro-text">And I'm a third year <a target="_blank" href="https://www.rgu.ac.uk/study/courses/1830-msci-computing-science">Computing Science (MSci)</a> student at <a target="_blank" href="https://www.rgu.ac.uk/">Robert Gordon University</a> who loves to solve problems creatively.
+                I have experience in the industry of technical support and am experienced in many different programming languages. 
+                I'm always pushing myself to learn and explore new things.
+                I'm currently seeking a yearlong placement opportunity to apply my computing knowledge and skills. <br><a href="#contactme">Contact me</a> if you're interested!
+            </p>
+
         </div>
     </section>
-
     <!--About me-->
     <section id="more-about-me">
         <div id="more-about-me-div">
             <h2>Some more about me</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Nulla pharetra ipsum erat, non commodo mauris tincidunt nec. 
-                Cras egestas tempus turpis nec ultrices. Mauris ac nisl erat. 
-                Etiam eget mollis dolor. Nulla sed leo egestas, pretium sapien sed, imperdiet nunc. 
-                Cras sollicitudin gravida dolor, vel condimentum lectus tincidunt eget. 
-                Pellentesque commodo interdum euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
-                Praesent ut massa posuere nisl consequat elementum non ut risus. 
-                Nullam a aliquam sem.</p>
+                As a programmer I'm always looking for solutions to problems in the world around me. 
+                I've built <a href="#projects"> apps, websites and programs</a>, and am proficient at working solo, 
+                and as part of a team. I've also had the opportunity to gain real world work experience as a Temporary Trainee Engineer with <a target="_blank" href="https://www.mjdsystems.co.uk/">MJD Systems</a>, a Cyber Security 
+                and Tech Consultancy company based in <a target="_blank" href="https://www.google.com/maps/place/Moray/"> Moray</a>. Here I sharpened my skills in Customer Service, Computer Repair and Teamwork.
+                
+            </p>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Nulla pharetra ipsum erat, non commodo mauris tincidunt nec. 
-                Cras egestas tempus turpis nec ultrices. Mauris ac nisl erat. 
-                Etiam eget mollis dolor. Nulla sed leo egestas, pretium sapien sed, imperdiet nunc.                 Cras sollicitudin gravida dolor, vel condimentum lectus tincidunt eget. 
-                Pellentesque commodo interdum euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
-                Praesent ut massa posuere nisl consequat elementum non ut risus. 
-                Nullam a aliquam sem.
+                Studying at Robert Gordon University has been an incredibly value experience, and has 
+                helped me to improve my Communication, Problem Solving and Teamwork skills, working in many large projects with a variety of other students. 
+                A highlight of my time at Robert Gordon University has been participating in the yearly hackathon, 
+                <a target="_blank" href="https://rguhack.uk/">RGUHack</a>. This exciting coding event brings together
+                many students from across RGU to try solve problems in the industry today, encouraging students to 
+                improve their problem solving and teamwork abilities.
+                
             </p>  
         </div>  
     </section>
@@ -89,71 +70,69 @@
         <div class="skills-div">
             <div class="row1 animate__animated animate__pulse">
                 <div class="skill-cell">
-                    <i class="fa-solid fa-globe icon-skill"></i>
+                    <i title="Web Development" alt="Web Development" class="fa-solid fa-globe icon-skill"></i>
                     <p>Web</p> 
                     <p>Development</p>
                 </div>
                 <div class="skill-cell">
-                    <i class="fa-solid fa-user-ninja icon-skill" ></i>
+                    <i title="Ethical Hacking" alt="Ethical Hacking" class="fa-solid fa-user-ninja icon-skill" ></i>
                     <p>Ethical</p>
                     <p>Hacking</p>
                 </div>
                 <div class="skill-cell">
-                    <i class="fa-solid fa-keyboard icon-skill"></i>
+                    <i title="Software Development" alt="Software Development"class="fa-solid fa-keyboard icon-skill"></i>
                     <p>Software</p>
                     <p>Development</p>
                 </div>
                 <div class="skill-cell">
-                    <i class="fa-solid fa-laptop icon-skill"></i>
-                    <p>Tech Support</p>
+                    <i title="Technical Support" alt="Technical Support" class="fa-solid fa-laptop icon-skill"></i>
+                    <p>Technical Support</p>
                 </div>
                 <div class="skill-cell">
-                    <i class="fa-solid fa-network-wired icon-skill"></i>
+                    <i title="Networking" alt="Networking"class="fa-solid fa-network-wired icon-skill"></i>
                     <p>Networking</p>
                 </div>
                 <div class="skill-cell">
-                    <i class="fa-solid fa-mobile icon-skill"></i>
+                    <i title="Mobile App Development" alt="Mobile App Development"class="fa-solid fa-mobile icon-skill"></i>
                     <p>Mobile App</p>
                     <p>Development</p>
                 </div>
                 <div class="skill-cell">
-                    <i class="fa-solid fa-microchip icon-skill"></i>
+                    <i title="Internet of Things" alt="Internet of Things" class="fa-solid fa-microchip icon-skill"></i>
                     <p>Internet of</p>
                     <p>Things (IoT)</p>
                 </div>
+                <!-- <div class="skill-cell">
+                    <i title="Teamwork" alt="Teamwork" class="fa-solid fa-people-group icon-skill"></i>
+                    <p>Teamwork</p>
+                </div> -->
             </div>
         </div>
         <h2 id="languages-title">Languages</h2>
         <div class="skills-div">
             <div class="row2 animate__animated animate__pulse">
                 <div class="skill-cell">
-                    <!--<i class="fa-brands fa-html5 icon-skill"></i>-->
-                    <img class="icon-skill-img" src="./images/html5.png">
+                    <img title="HTML5" alt="HTML5 icon" class="icon-skill-img" src="./images/html5.png">
                     <p>HTML5</p>
                 </div>
                 <div class="skill-cell">
-                    <!--<i class="fa-brands fa-css3-alt icon-skill"></i>-->
-                    <img class="icon-skill-img" src="./images/css3.png">
+                    <img title="CSS3" alt="CSS3 icon" class="icon-skill-img" src="./images/css3.png">
                     <p>CSS3</p>
                 </div>
                 <div class="skill-cell">
-                    <img class="icon-skill-img" src="./images/js.png">
-                    <!--<i class="fa-brands fa-square-js icon-skill"></i>-->
+                    <img title="JavaScript" alt="JavaScript icon"class="icon-skill-img" src="./images/js.png">
                     <p>Javascript</p>
                 </div>
                 <div class="skill-cell">
-                    <!--<i class="fa-brands fa-java icon-skill"></i>-->
-                    <img class="icon-skill-img" src="./images/java.png">
+                    <img title="Java" alt="Java icon" class="icon-skill-img" src="./images/java.png">
                     <p>Java</p>
                 </div>
                 <div class="skill-cell">
-                    <!--<i class="fa-brands fa-python icon-skill"></i>-->
-                    <img class="icon-skill-img" src="./images/python.png">
+                    <img title="Python" alt="Python icon" class="icon-skill-img" src="./images/python.png">
                     <p>Python</p>
                 </div>
                 <div class="skill-cell">
-                    <!--<i class="fa-solid fa-database icon-skill"></i>-->
-                    <img class="icon-skill-img" src="./images/sql.png">
+                    <img title="SQL" alt="SQL icon" class="icon-skill-img" src="./images/sql.png">
                     <p>SQL</p>
                 </div>
             </div>
@@ -163,12 +142,11 @@
     <!--Projects Section-->
     <section class="projects" id="projects">
         <h2 id="projects-title">Projects (on GitHub)</h2>
-        <!--<p>Some projects I've worked on</p>-->
         <div class="projects-div">
             <div class="row1 animate__animated animate__pulse">
                 <div class="project-cell project-container">
                     <a target="_blank" href="https://github.com/o-souter/Where-ISS-it">
-                        <img class="project-img" src="./images/appicon.png">
+                        <img title="Click to view project on GitHub" alt="The icon of my app, WhereISSit?" class="project-img" src="./images/appicon.png">
                     </a>   
                     <p class="project-title">WhereISSit?</p> 
                     <p class="project-description">A mobile app to track the <a href="https://www.nasa.gov/mission_pages/station/main/index.html">International Space Station</a></a> and meteors using APIs</p>
@@ -176,7 +154,7 @@
                 <div class="space-between-cell"></div>
                 <div class="project-cell project-container">
                     <a target="_blank" href="https://github.com/o-souter/dadjokebot">
-                        <img class="project-img" src="./images/discord.png">
+                        <img title="Click to view project on GitHub" alt="The icon of my discord bot, dadjokebot"class="project-img" src="./images/discord.png">
                     </a>   
                     <p class="project-title">dadjokebot</p> 
                     <p class="project-description">A discord bot that uses <a href="https://icanhazdadjoke.com">icanhazdadjoke.com</a>'s API to tell dad jokes</p>
@@ -184,7 +162,7 @@
                 <div class="space-between-cell"></div>
                 <div class="project-cell project-container">
                     <a target="_blank" href="https://github.com/o-souter/Travel-Beans/tree/main">
-                        <img class="project-img" src="./images/travelbeans.png">
+                        <img title="Click to view project on GitHub" alt="The icon of the website, Travel Beans"class="project-img" src="./images/travelbeans.png">
                     </a>   
                     <p class="project-title">Travel Beans</p> 
                     <p class="project-description">A website made for a theoretical Travel Society at RGU</p>
@@ -192,7 +170,7 @@
                 <div class="space-between-cell"></div>
                 <div class="project-cell project-container">
                     <a target="_blank" href="https://github.com/o-souter/PHIL">
-                        <img class="project-img" src="./images/phil.png">
+                        <img title="Click to view project on GitHub" alt="A picture of my project, P.H.I.L" class="project-img" src="./images/phil.png">
                     </a>   
                     <p class="project-title">P.H.I.L</p> 
                     <p class="project-description">A prototype smart-home alarm system for the elderly and vulnerable</p>
@@ -200,7 +178,7 @@
                 <div class="space-between-cell"></div>
                 <div class="project-cell project-container">
                     <a target="_blank" href="https://github.com/o-souter/Password-Generator">
-                        <img class="project-img" src="./images/password.png">
+                        <img title="Click to view project on GitHub" alt="The icon of my project, Password-Generator"class="project-img" src="./images/password.png">
                     </a>   
                     <p class="project-title">Password Generator</p> 
                     <p class="project-description">A useful application which generates very secure passwords </p>
@@ -243,7 +221,7 @@
             <div class="row1 animate__animated animate__pulse">
                 <div class="findme-cell findme-container">
                     <a target="_blank" href="https://www.linkedin.com/in/oliver-souter2002/">
-                        <img class="findme-img" src="./images/linkedin.png">
+                        <img title="Find me on LinkedIn" alt="LinkedIn icon" class="findme-img" src="./images/linkedin.png">
                     </a>   
                     <p class="findme-title">LinkedIn</p> 
                     <p class="findme-tag"><a href="https://www.linkedin.com/in/oliver-souter2002/">@oliver-souter2002</a></p>
@@ -251,7 +229,7 @@
 
                 <div class="findme-cell findme-container">
                     <a target="_blank" href="https://github.com/o-souter">
-                        <img class="findme-img" src="./images/github.png">
+                        <img title="Find me on GitHub" alt="Github icon" class="findme-img" src="./images/github.png">
                     </a>   
                     <p class="findme-title">GitHub</p> 
                     <p class="findme-tag"><a href="https://github.com/o-souter">@o-souter</a></p>

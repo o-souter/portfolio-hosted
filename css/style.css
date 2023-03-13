@@ -49,15 +49,12 @@ a {
     color: var(--text-links);
 }
 
-a:hover {
-    color: var(--background-colour);
+a:not(#hamburger-menu):hover {
+    color: var(--secondary-colour);
 }
 
 /* Navigation bar CSS */
 
-#navbar-container-mobile {
-    display: none;
-}
 .nav-link-mobile {
     display: none;
 }
@@ -94,6 +91,7 @@ nav a:hover {
     border-bottom: 2px solid var(--secondary-colour);
 }
 #hamburger-menu {
+    float:right;
     cursor: pointer;
     display:none;
 }
@@ -129,7 +127,6 @@ nav a:hover {
     border-radius: var(--radius-borders);
 }
 #intro {
-    width: rem;
     padding: 0.7rem;
     border-radius: var(--radius-borders);
     box-shadow: 0px 2px 15px 2px var(--primary-shadow);
@@ -156,6 +153,8 @@ nav a:hover {
 }
 #more-about-me-div {
     width: 100%;
+    padding-left:8rem;
+    padding-right:8rem;
     
 }
 
@@ -379,7 +378,8 @@ nav a:hover {
     width:15rem ;
     word-wrap: break-word;
     padding:1rem;
-    margin:5rem;
+    margin:auto;
+    margin-top:2rem;
     width:15rem ;
     word-wrap: break-word;
     background-color: var(--primary-shadow);
@@ -396,15 +396,51 @@ nav a:hover {
     border-radius: 100rem;
 }
 
-/* Mobile Responsivity*/
-@media screen and (max-width: 720px) {
-    /* Navigation menu */
-    nav {
+
+/* Slight Web Responsivity for smaller screen sizes*/
+@media screen and (max-width: 1200px) {
+    #hero-img {
+        width:23.4rem;
+        height: 18rem;
+        border-radius: 2rem;
+    }
+    #intro {
+        padding-bottom:4rem;
+    }
+    #intro-text {
+        margin-top:2rem;
+        height: 12rem;
+    }
+
+    #more-about-me-div {
+        padding-left:0rem;
+        padding-right:0rem;
         
     }
+}
+
+
+/* Mobile Responsivity*/
+@media screen and (max-width: 1000px) {
+    /* Navigation menu */
     #profile-img {
         display: none;
     }
+
+    nav {
+        padding:1.5rem 1rem;
+    }
+    #navbar-container {
+        display:block;
+        padding:1rem 0.75rem;
+        background-color: var(--background-colour);
+        box-shadow:0 3px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #navbar-container h1 {
+        text-align: center;
+    }
+
     nav ul {
         position:fixed;
         background-color: var(--background-colour);
@@ -426,6 +462,8 @@ nav a:hover {
 
     #hamburger-menu {
         display: block;
+        float:left;
+
     }
     nav ul.show {
         transform: translateX(0);
@@ -450,9 +488,15 @@ nav a:hover {
     #intro-text {
         width:20rem;
     }
+    #intro {
+        padding-bottom:7rem;
+    }
     /* More about me section */
-    #more-about-me {
-        padding:2rem;
+
+    #more-about-me-div {
+        padding-left:0rem;
+        padding-right:0rem;
+        
     }
 
 }
