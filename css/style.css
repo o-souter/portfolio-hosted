@@ -171,7 +171,7 @@ nav a:hover {
 
 /* Skills section CSS */
 .skills {
-    scroll-margin-top: 150px;
+    scroll-margin-top: 165px;
     max-width: 70rem;
     margin:auto;
     text-align:center;
@@ -220,7 +220,7 @@ nav a:hover {
 /*Projects Section */
 
 .projects {
-    scroll-margin-top: 150px;
+    scroll-margin-top: 145px;
     background-color: var(--primary-colour);
     padding:32px 0;
     margin-top:2rem;
@@ -274,7 +274,7 @@ nav a:hover {
 
 /* Contact section CSS*/
 #contactme {
-    scroll-margin-top: 150px;
+    scroll-margin-top: 165px;
     margin:2rem;
 }
 #contactme h2 {
@@ -399,6 +399,9 @@ nav a:hover {
 
 /* Slight Web Responsivity for smaller screen sizes*/
 @media screen and (max-width: 1200px) {
+    html, body {
+        overflow-x: hidden;
+    }
     #hero-img {
         width:23.4rem;
         height: 18rem;
@@ -420,17 +423,27 @@ nav a:hover {
 }
 
 
-/* Mobile Responsivity*/
+/* Mobile/tablet Responsivity*/
 @media screen and (max-width: 1000px) {
+    html, body {
+        overflow-x: hidden;
+    }
     /* Navigation menu */
     #profile-img {
         display: none;
     }
 
     nav {
+        position: sticky;
         padding:1.5rem 1rem;
     }
     #navbar-container {
+        width:100%;
+        position: fixed;
+        top:0;
+        left:0;
+        z-index: 1;
+        
         display:block;
         padding:1rem 0.75rem;
         background-color: var(--background-colour);
@@ -461,6 +474,7 @@ nav a:hover {
     }
 
     #hamburger-menu {
+        padding: 5px;
         display: block;
         float:left;
 
@@ -477,15 +491,18 @@ nav a:hover {
         align-content: center;
         gap:0;
         margin-top: -4rem;
+        width:100%;
+        
     }   
     #hero-img {
-        padding:1.5rem 1rem;
-        width:26rem;
-        height: 20rem;
-        border-radius: var(--radius-borders);
+        padding-top:80px;
+        width:100%;
+        height: 100%;
+        border-radius: 0.5rem;
     }
 
     #intro-text {
+        padding-top:4rem;
         width:20rem;
     }
     #intro {
@@ -493,10 +510,20 @@ nav a:hover {
     }
     /* More about me section */
 
-    #more-about-me-div {
-        padding-left:0rem;
-        padding-right:0rem;
+    #more-about-me {
+        padding-left:3rem;
+        padding-right:3rem;
+        margin: auto;
         
     }
 
+}
+/* Mobile-only Responsivity */
+@media screen and (max-width: 800px) { 
+    #hero-img {
+        padding-top:80px;
+        width:130%;
+        height: 130%;
+        border-radius: 0.5rem;
+    }
 }
