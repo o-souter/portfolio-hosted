@@ -2,4 +2,4 @@
 Hosting repo for my developer website.
 
 
-View it [here](https://www.oliversouter.com/)!
+View it online [here](https://www.oliversouter.com/)!
