@@ -409,10 +409,11 @@ nav a:hover {
     }
     #intro {
         padding-bottom:4rem;
+        align-content: center;
     }
     #intro-text {
         margin-top:2rem;
-        height: 12rem;
+        min-height: 1rem;
     }
 
     #more-about-me-div {
@@ -420,6 +421,7 @@ nav a:hover {
         padding-right:0rem;
         
     }
+    
 }
 
 
@@ -502,11 +504,15 @@ nav a:hover {
     }
 
     #intro-text {
-        padding-top:4rem;
-        width:20rem;
+        text-align: center;
+        width:100%;
     }
     #intro {
-        padding-bottom:7rem;
+        padding-bottom:0rem;
+        width:120%;
+    }
+    #intro p { 
+        padding: 0rem 0;
     }
     /* More about me section */
 
@@ -525,5 +531,11 @@ nav a:hover {
         width:130%;
         height: 130%;
         border-radius: 0.5rem;
+        margin:1.5rem;
     }
+
+    #intro-text {
+        width: 100%;
+    }
+    
 }
