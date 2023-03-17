@@ -147,11 +147,13 @@ nav a:hover {
 /*More about me Section CSS */
 
 #more-about-me {
+    
     scroll-margin-top: 150px;
     background-color: var(--primary-colour);
     padding: var(--page-padding);
 }
 #more-about-me-div {
+    margin-top: 1rem;
     width: 100%;
     padding-left:8rem;
     padding-right:8rem;
@@ -498,13 +500,15 @@ nav a:hover {
     }   
     #hero-img {
         padding-top:80px;
+
+        max-width:40rem;
         width:100%;
         height: 100%;
         border-radius: 0.5rem;
     }
 
     #intro-text {
-        text-align: center;
+        text-align: left;
         width:100%;
     }
     #intro {
