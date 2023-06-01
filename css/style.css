@@ -60,7 +60,7 @@ a:not(#hamburger-menu):hover {
 }
 
 #navbar-container {
-    position: sticky;
+    position:sticky;
     display:flex;
     top: 0;
     left: 0;
@@ -97,16 +97,16 @@ nav a:hover {
 }
 #profile-img {
     border-radius: 50%;
-    width:100px;
-    height:100px;
+    width:80px;
+    height:80px;
     border: var(--borders) solid;
     border-color: var(--primary-shadow);
     transition: 1s ease-out;
 }
 
 #profile-img:hover {
-    width:90px;
-    height:90px;
+    width:75px;
+    height:75px;
     transition: 1s ease-out;
 }
 
