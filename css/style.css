@@ -21,7 +21,13 @@
 
 html {
     scroll-behavior: smooth;
+    transition : 1s;
 }
+
+html * {
+    transition: 1s;
+}
+
 /* General Page CSS */
 * {
     margin:0;
@@ -108,6 +114,11 @@ nav a:hover {
     width:75px;
     height:75px;
     transition: 1s ease-out;
+}
+
+#lightDarkToggle {
+    width:100%;
+    cursor: pointer;
 }
 
 /* Hero Section CSS */
@@ -543,3 +554,16 @@ nav a:hover {
     }
     
 }
+
+
+/* Dark mode */
+/*
+html[data-theme='dark'] {
+    background:#000;
+    filter:invert(1) hue-rotate(180deg);
+}
+
+html[data-theme='light'] {
+    background:#000;
+    filter:invert(1) hue-rotate(180deg);
+}*/
