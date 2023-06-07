@@ -91,6 +91,7 @@ function setDarkMode() {
     for (const el of findmeCells) {el.style.backgroundColor = "#545252"}
     footer.style.color = "white"
     footer.style.backgroundColor = "#0e0833"
+
 }
 
 //Function to set website theme to light
