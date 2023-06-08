@@ -26,6 +26,7 @@ const findme = document.getElementById('findme')
 const findmeCells = document.getElementsByClassName("findme-cell")
 const footer = document.getElementsByTagName('footer')[0]
 const allFooter = document.getElementById('footer')
+const year = document.getElementById('date');
 
 //Hamburger menu scripts
 const hamburgermenu = document.getElementById("hamburger-menu");
@@ -143,3 +144,7 @@ function toggleLightDarkMode() {
         setLightMode();
     }
 }
+
+
+//Update the year
+year.innerHTML = new Date().getFullYear();
