@@ -55,6 +55,8 @@ a {
     color: var(--text-links);
 }
 
+
+
 a:not(#hamburger-menu):hover {
     color: var(--secondary-colour);
 }
@@ -92,7 +94,7 @@ nav a {
     color: var(--primary-colour);
     transition: var(--transition);
 }
-nav a:hover {
+a:not(.no-underline):hover {
     color: var(--secondary-colour);
     border-bottom: 2px solid var(--secondary-colour);
 }
@@ -219,15 +221,23 @@ nav a:hover {
 }
 
 .icon-skill-img {
-    margin:1rem;
     width: 5rem;
     height: 5rem;
 }
 
+#githubimg {
+    margin: 5px;
+}
+
 .skill-cell {
+    margin:1rem;
     margin:auto;
     float:left;
     padding: 1.25rem;
+}
+
+.skill-cell:hover {
+    transform: translate(0px, 10px);
 }
 
 /*Projects Section */
@@ -262,7 +272,7 @@ nav a:hover {
 }
 
 .project-cell {
-    width:15rem ;
+    width:15rem;
     word-wrap: break-word;
     padding:1rem;
     margin-top:5rem !important;
@@ -273,6 +283,16 @@ nav a:hover {
     border-radius: var(--radius-borders);
 }
 
+.white-border {
+    margin:0px;
+    background-color: white;
+    border-radius: var(--radius-borders);
+}
+
+/* #githubicon {
+    height: 80%;
+    width: 80%;
+} */
 
 .project-img {
     padding:1rem;

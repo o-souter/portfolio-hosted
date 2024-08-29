@@ -23,6 +23,12 @@
     <!--Scripts-->
     <script src="./javascript/site-scripts.js" defer></script>
     <script src="https://kit.fontawesome.com/a9e5775e06.js" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function onSubmit(token) {
+          document.getElementById("form-button").submit();
+        }
+    </script>
 </head>
 <body id="body">
     <!--Navigation menu-->
@@ -46,8 +52,8 @@
         <img id="hero-img" src="./images/snowboard.jpg" alt="Picture of Oliver" loading="lazy" title="Alpe D'Huez">
         <div id="intro" class="animate__animated animate__pulse">
             <h2 id="intro-title">Hi, I'm Oliver.</h2>
-            <p id="intro-text">And I'm a fourth year <a target="_blank" href="https://www.rgu.ac.uk/study/courses/1830-msci-computing-science">Computing Science (MSci)</a> student at <a target="_blank" href="https://www.rgu.ac.uk/">Robert Gordon University</a> who loves to solve problems creatively.
-                I've gained experience in the industry of technical support and have utilised many different programming languages. 
+            <p id="intro-text">And I'm a fifth year <a target="_blank" href="https://www.rgu.ac.uk/study/courses/1830-msci-computing-science">Computing Science (MSci)</a> student at <a target="_blank" href="https://www.rgu.ac.uk/">Robert Gordon University</a>.
+                I've gained experience in the industries of Software Engineering and Technical Support, utilising many different programming languages and technical skills. 
                 I'm always pushing myself to learn new things and find new ways to solve problems in the world around me.
             </p>
         </div>
@@ -57,17 +63,24 @@
         <div id="more-about-me-div">
             <h2 id="more-about-me-title">Some more about me</h2>
             <p class="more-about-me-txt">
-                As a programmer I've built <a href="#projects"> apps, websites and programs</a>, and am proficient at working solo, 
-                and as part of a team. I've also had the opportunity to gain real world work experience as a Temporary Trainee Engineer with <a target="_blank" href="https://www.mjdsystems.co.uk/">MJD Systems</a>, a Cyber Security 
-                and Tech Consultancy company based in <a target="_blank" href="https://www.google.com/maps/place/Moray/"> Moray</a>. Here I sharpened my skills in Customer Service, Computer Repair and Teamwork.
-            </p>
-            <p class="more-about-me-txt">
-                Studying at Robert Gordon University has been an incredibly valuable experience, and has 
+                As a programmer I've built <a href="#projects"> apps, websites and programs</a>, working solo, 
+                and as part of a team. Studying at Robert Gordon University has been an incredibly valuable experience, and has 
                 helped me to improve my Communication, Problem Solving and Teamwork skills, working in many large projects with a variety of other students. 
                 A highlight of my time at Robert Gordon University has been participating in the yearly hackathon, 
                 <a target="_blank" href="https://rguhack.uk/">RGUHack</a>. This exciting coding event brings together
                 many students from across RGU to try solve problems in the industry today, encouraging students to 
                 improve their problem solving and teamwork abilities.
+            </p>
+
+            <p class="more-about-me-txt">
+                During my fourth year at Robert Gordon University, I had the privilege of completing a year long software development internship with <a href="https://imenco.no/">Imenco</a>. 
+                As the main developer on a significant project, I collaborated closely with the Imenco team over the course of a year, 
+                contributing to the project's success and gaining invaluable experience in the field.
+            </p>  
+
+            <p class="more-about-me-txt">
+                I've also had the opportunity to gain real world work experience as a Temporary Trainee Engineer with <a target="_blank" href="https://www.mjdsystems.co.uk/">MJD Systems</a>, a Cyber Security 
+                and Tech Consultancy company based in Moray. Here I sharpened my skills in Customer Service, Computer Repair and Teamwork.
             </p>  
         </div>  
     </section>
@@ -82,22 +95,9 @@
                     <p>Development</p>
                 </div>
                 <div class="skill-cell">
-                    <i title="Ethical Hacking" class="fa-solid fa-user-ninja icon-skill" ></i>
-                    <p>Ethical</p>
-                    <p>Hacking</p>
-                </div>
-                <div class="skill-cell">
-                    <i title="Software Development" class="fa-solid fa-keyboard icon-skill"></i>
+                    <i title="Software Development" class="fa-solid fa-terminal icon-skill"></i>
                     <p>Software</p>
                     <p>Development</p>
-                </div>
-                <div class="skill-cell">
-                    <i title="Technical Support" class="fa-solid fa-laptop icon-skill"></i>
-                    <p>Technical Support</p>
-                </div>
-                <div class="skill-cell">
-                    <i title="Networking" class="fa-solid fa-network-wired icon-skill"></i>
-                    <p>Networking</p>
                 </div>
                 <div class="skill-cell">
                     <i title="Mobile App Development" class="fa-solid fa-mobile icon-skill"></i>
@@ -105,13 +105,38 @@
                     <p>Development</p>
                 </div>
                 <div class="skill-cell">
-                    <i title="Internet of Things" class="fa-solid fa-microchip icon-skill"></i>
+                    <i title="Networking" class="fa-solid fa-network-wired icon-skill"></i>
+                    <p>Networking</p>
+                </div>
+                <div class="skill-cell">
+                    <i title="Ethical Hacking" class="fa-solid fa-user-ninja icon-skill" ></i>
+                    <p>Ethical</p>
+                    <p>Hacking</p>
+                </div>
+                <div class="skill-cell">
+                    <i title="Technical Support" class="fa-solid fa-headset icon-skill"></i>
+                    <p>Technical Support</p>
+                </div>
+                
+                
+                <div class="skill-cell">
+                    <i title="Internet of Things" class="fa-solid fa-wifi icon-skill"></i>
                     <p>Internet of</p>
                     <p>Things (IoT)</p>
                 </div>
+                <div class="skill-cell">
+                    <i title="Long Term Project Development" class="fa-solid fa-diagram-project icon-skill"></i>
+                    <p>Long Term Project</p>
+                    <p>Development</p>
+                </div>
+                <div class="skill-cell">
+                    <i title="Maths-Driven Development" class="fa-solid fa-square-root-variable icon-skill"></i>
+                    <p>Maths-Driven</p>
+                    <p>Development</p>
+                </div>
             </div>
         </div>
-        <h2 id="languages-title">Languages</h2>
+        <h2 id="languages-title">Languages and Frameworks</h2>
         <div class="skills-div">
             <div class="row2 animate__animated animate__pulse">
                 <div class="skill-cell">
@@ -138,33 +163,43 @@
                     <img title="SQL" alt="SQL icon" class="icon-skill-img" src="./images/sql.png">
                     <p>SQL</p>
                 </div>
+                <div class="skill-cell">
+                    <img title="Git" alt="Git icon" class="icon-skill-img" src="./images/git.png">
+                    <p>Git</p>
+                </div>
+                <div class="skill-cell">
+                    <div class="white-border">
+                        <img title="Github" alt="Github icon" id = "githubimg" class="icon-skill-img" src="./images/github.png">
+                    </div>
+                    <p>Github</p>
+                </div>
+                <div class="skill-cell">
+                    <div class="white-border">
+                        <img title="Node.js" alt="NodeJS icon" class="icon-skill-img" src="./images/nodejs.svg">
+                    </div>
+                    <p>Node.js</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!--Projects Section-->
     <section class="projects" id="projects">
-        <h2 id="projects-title">Projects (on GitHub)</h2>
+        <h2 id="projects-title">Github Projects</h2>
         <div class="projects-div">
             <div class="row1 animate__animated animate__pulse">
                 <div class="project-cell project-container">
-                    <a target="_blank" href="https://github.com/o-souter/Where-ISS-it">
+                    <a class="no-underline" target="_blank" href="https://github.com/o-souter/Where-ISS-it">
                         <img title="Click to view project on GitHub" alt="The icon of my app, WhereISSit?" class="project-img" src="./images/appicon.png">
                     </a>   
                     <p class="project-title">WhereISSit?</p> 
                     <p class="project-description">A mobile app to track the <a href="https://www.nasa.gov/mission_pages/station/main/index.html">International Space Station</a> and meteors using APIs</p>
                 </div>
                 <div class="space-between-cell"></div>
-                <div class="project-cell project-container">
-                    <a target="_blank" href="https://github.com/o-souter/dadjokebot">
-                        <img title="Click to view project on GitHub" alt="The icon of my discord bot, dadjokebot" class="project-img" src="./images/discord.png">
-                    </a>   
-                    <p class="project-title">dadjokebot</p> 
-                    <p class="project-description">A discord bot that uses <a href="https://icanhazdadjoke.com">icanhazdadjoke.com</a>'s API to tell dad jokes</p>
-                </div>
+                
                 <div class="space-between-cell"></div>
                 <div class="project-cell project-container">
-                    <a target="_blank" href="https://github.com/o-souter/Travel-Beans/tree/main">
+                    <a class="no-underline" target="_blank" href="https://github.com/o-souter/Travel-Beans/tree/main">
                         <img title="Click to view project on GitHub" alt="The icon of the website, Travel Beans" class="project-img" src="./images/travelbeans.png">
                     </a>   
                     <p class="project-title">Travel Beans</p> 
@@ -172,7 +207,7 @@
                 </div>
                 <div class="space-between-cell"></div>
                 <div class="project-cell project-container">
-                    <a target="_blank" href="https://github.com/o-souter/PHIL">
+                    <a class="no-underline" target="_blank" href="https://github.com/o-souter/PHIL">
                         <img title="Click to view project on GitHub" alt="A picture of my project, P.H.I.L" class="project-img" src="./images/phil.png">
                     </a>   
                     <p class="project-title">P.H.I.L</p> 
@@ -180,11 +215,18 @@
                 </div>
                 <div class="space-between-cell"></div>
                 <div class="project-cell project-container">
-                    <a target="_blank" href="https://github.com/o-souter/Password-Generator">
+                    <a class="no-underline" target="_blank" href="https://github.com/o-souter/Password-Generator">
                         <img title="Click to view project on GitHub" alt="The icon of my project, Password-Generator" class="project-img" src="./images/password.png">
                     </a>   
                     <p class="project-title">Password Generator</p> 
                     <p class="project-description">A useful application which generates very secure passwords </p>
+                </div>
+                <div class="project-cell project-container">
+                    <a class="no-underline" target="_blank" href="https://github.com/o-souter/dadjokebot">
+                        <img title="Click to view project on GitHub" alt="The icon of my discord bot, dadjokebot" class="project-img" src="./images/discord.png">
+                    </a>   
+                    <p class="project-title">dadjokebot</p> 
+                    <p class="project-description">A discord bot that uses <a href="https://icanhazdadjoke.com">icanhazdadjoke.com</a>'s API to tell dad jokes</p>
                 </div>
             </div>
         </div>
@@ -209,7 +251,7 @@
                         <textarea id="message" cols="80" rows="10" name="message" placeholder="Enter your message here..." class="inputs" required></textarea>
                     </div>
                     <div id="button-container">
-                        <input type="submit" value="Submit" id="form-button" class="inputs">
+                        <input type="submit" value="Submit" id="form-button" class="inputs g-recaptcha" data-sitekey="6LeO9zEqAAAAAFNzq2APInUzHZT_Gdm6IDc1pjtJ" data-callback="onSubmit" data-action="submit">
                     </div>
                     </form>
             </div>
@@ -220,7 +262,7 @@
         <div class="findme-div">
             <div class="row1 animate__animated animate__pulse">
                 <div class="findme-cell findme-container">
-                    <a target="_blank" href="https://www.linkedin.com/in/o-souter/">
+                    <a class="no-underline" target="_blank" href="https://www.linkedin.com/in/o-souter/">
                         <img title="Find me on LinkedIn" alt="LinkedIn icon" class="findme-img" src="./images/linkedin.png">
                     </a>   
                     <p class="findme-title">LinkedIn</p> 
@@ -228,7 +270,7 @@
                 </div>
 
                 <div class="findme-cell findme-container">
-                    <a target="_blank" href="https://github.com/o-souter">
+                    <a class="no-underline" target="_blank" href="https://github.com/o-souter">
                         <img title="Find me on GitHub" alt="Github icon" class="findme-img" src="./images/github.png">
                     </a>   
                     <p class="findme-title">GitHub</p> 
