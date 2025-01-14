@@ -7,7 +7,7 @@
     --borders: 2px;
     --radius-borders:10px;
     --background-colour:#1A124D;
-    --primary-colour:#9bd8e9;
+    --primary-colour:#3f99af;
     --secondary-colour: #00ff22;
     --primary-shadow: #ebebeb;
     --secondary-shadow:#B27F48;
@@ -15,8 +15,9 @@
     --bottom-margin:0.5rem;
     --bottom-margin-other: 1rem;
     --line-height: 1.7rem;
-    --transition:0.9s;
+    --transition:0.1s;
     --page-padding: 1rem 5rem;
+    --navbartext: white;
 }
 
 html {
@@ -24,8 +25,8 @@ html {
     transition : 1s;
 }
 
-html * {
-    transition: 1s;
+html * :not(.cmdwrite) {
+    transition: 0.5s;
 }
 
 /* General Page CSS */
@@ -81,7 +82,7 @@ a:not(#hamburger-menu):hover {
 }
 
 nav h1 {
-    color: var(--primary-colour);
+    color: var(--navbartext);
 }
 nav ul {
     display:flex;
@@ -91,7 +92,7 @@ nav ul li {
     font-weight: var(--bold-font);
 }
 nav a {
-    color: var(--primary-colour);
+    color: var(--navbartext);
     transition: var(--transition);
 }
 a:not(.no-underline):hover {
@@ -145,6 +146,25 @@ a:not(.no-underline):hover {
     box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
 
+
+.cmdwrite h2 {
+    overflow: hidden;
+    border-right: .10em solid var(--secondary-colour);
+    white-space:nowrap;
+    margin: 0 auto;
+    /* letter-spacing: .15em; */
+    animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from {width: 0}
+    to {width: 100%}
+}
+
+@keyframes blink-caret {
+    from, to {border-color: transparent}
+    50% {border-color: var(--secondary-colour)}
+}
 
 
 #intro h2 {

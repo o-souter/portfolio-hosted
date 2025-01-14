@@ -48,6 +48,14 @@ function hideMenu() {
     }
 }
 
+introText.style.color = "white";
+introTitle.style.color = "white";
+intro.style.backgroundColor = "#1A124D"
+
+// for (const el of hyperlinks) {
+//     if (el.className != 'nav-link' && el.id != 'hamburger-menu') {el.style.color = "#00ff22"}
+// }
+
 //Detecting the device theme when website is accessed to match themes
 // function deviceIsDarkMode() {
 //     return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -65,8 +73,7 @@ function setDarkMode() {
     for (const el of hyperlinks) {
         if (el.className != 'nav-link' && el.id != 'hamburger-menu') {el.style.color = "#00ff22"}
     }
-    introText.style.color = "white";
-    introTitle.style.color = "white";
+    
     intro.style.boxShadow = "none";
     moreAboutMe.style.backgroundColor = "#464682";
     moreAboutMeTitle.style.color = "white";
@@ -102,10 +109,10 @@ function setLightMode() {
     sunMoon.classList.add("fa-solid");
     html.style.backgroundColor = "white";
     for (const el of hyperlinks) {
-        if (el.className != 'nav-link' && el.id != 'hamburger-menu') {el.style.color = "#007910"}
+        if (el.className != 'nav-link' && el.id != 'hamburger-menu') {el.style.color = "#03a619"}
     }
-    introText.style.color = "black";
-    introTitle.style.color = "black";
+    // introText.style.color = "black";
+    // introTitle.style.color = "black";
     intro.style.boxShadow = "0px 2px 15px 2px var(--primary-shadow)"
     moreAboutMe.style.backgroundColor = "#9bd8e9";
     moreAboutMeTitle.style.color= "black"
