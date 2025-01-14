@@ -49,13 +49,13 @@ function hideMenu() {
 }
 
 //Detecting the device theme when website is accessed to match themes
-function deviceIsDarkMode() {
-    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-}
+// function deviceIsDarkMode() {
+//     return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+// }
 
-if (deviceIsDarkMode()) {
-    setDarkMode();
-}
+// if (deviceIsDarkMode()) {
+//     setDarkMode();
+// }
 //Function to set website theme to dark
 function setDarkMode() {
     mode = 'dark'; 
