@@ -109,7 +109,8 @@ function setLightMode() {
     sunMoon.classList.add("fa-solid");
     html.style.backgroundColor = "white";
     for (const el of hyperlinks) {
-        if (el.className != 'nav-link' && el.id != 'hamburger-menu') {el.style.color = "#03a619"}
+        if (el.className != 'nav-link' && el.id != 'hamburger-menu' && !el.classList.contains("intro-links")) {el.style.color = "#03a619"}
+        else if (el.className != 'nav-link' && el.id != 'hamburger-menu' && el.classList.contains("intro-links")){el.style.color = "#00ff22"}
     }
     // introText.style.color = "black";
     // introTitle.style.color = "black";
