@@ -182,7 +182,7 @@ a:not(.no-underline):hover {
 #more-about-me {
     
     scroll-margin-top: 150px;
-    background-color: var(--primary-colour);
+    background-color: #9bd8e9;
     padding: var(--page-padding);
 }
 #more-about-me-div {

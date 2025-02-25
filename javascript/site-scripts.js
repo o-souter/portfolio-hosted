@@ -149,7 +149,7 @@ function toggleLightDarkMode() {
         setLightMode();
     }
     else {
-        setLightMode();
+        setDarkMode();
     }
 }
 
