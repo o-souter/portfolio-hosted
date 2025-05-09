@@ -23,24 +23,24 @@
     <!--Scripts-->
     <script src="./javascript/site-scripts.js" defer></script>
     <script src="https://kit.fontawesome.com/a9e5775e06.js" crossorigin="anonymous"></script>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
+    <!-- <script>
         function onSubmit(token) {
           document.getElementById("form-button").submit();
         }
-    </script>
+    </script> -->
 </head>
 <body id="body">
     <!--Navigation menu-->
     <nav id="navbar-container">
         <a onclick="toggleMenu()" id="hamburger-menu"><i class="fa-solid fa-bars"></i></a>
-        <img id="profile-img" alt="Picture of Oliver" loading="lazy" src="./images/profile.jpg">
+        <img id="profile-img" alt="Picture of Oliver" loading="lazy" src="./images/me.jpeg">
         <h1>Oliver Souter</h1>
         <ul id="navbar">
             <li><a class="nav-link" onclick="hideMenu()" href="#about">About me</a></li>
             <li><a class="nav-link" onclick="hideMenu()" href="#skills">My skills</a></li>
             <li><a class="nav-link" onclick="hideMenu()" href="#projects">Projects</a></li>
-            <li><a class="nav-link" onclick="hideMenu()" href="#contactme">Contact me</a></li>
+            <!-- <li><a class="nav-link" onclick="hideMenu()" href="#contactme">Contact me</a></li> -->
             <li><a class="nav-link" onclick="hideMenu()" href="#findme">Where to find me</a></li>
             <li><a id="lightDarkToggle" class="nav-link" onclick="toggleLightDarkMode()">
                 <i id = "sunMoon" class="fa-solid fa-sun fa-lg" title="Switch between light and dark mode"></i>
@@ -49,10 +49,10 @@
     </nav>
     <!-- Hero Section -->
     <section class="hero-section" id="about">
-        <img id="hero-img" src="./images/snowboard.jpg" alt="Picture of Oliver" loading="lazy" title="Alpe D'Huez">
+        <img id="hero-img" src="./images/me.jpeg" alt="Picture of Oliver" loading="lazy" title="Picture of Oliver">
         <div id="intro" class="aanimate__animated aanimate__pulse cmdwrite">
             <h2 id="intro-title">Hi, I'm Oliver.</h2>
-            <p id="intro-text">And I'm a fifth year <a class="intro-links" target="_blank" href="https://www.rgu.ac.uk/study/courses/1830-msci-computing-science">Computing Science (MSci)</a> student at <a class="intro-links" target="_blank" href="https://www.rgu.ac.uk/">Robert Gordon University</a>.
+            <p id="intro-text">And I'm a final year <a class="intro-links" target="_blank" href="https://www.rgu.ac.uk/study/courses/1830-msci-computing-science">Computing Science (MSci)</a> student at <a class="intro-links" target="_blank" href="https://www.rgu.ac.uk/">Robert Gordon University</a>.
                 I've gained experience in the industries of Software Engineering and Technical Support, utilising many different programming languages and technical skills. 
                 I'm always pushing myself to learn new things and find new ways to solve problems in the world around me.
             </p>
@@ -73,7 +73,7 @@
             </p>
 
             <p class="more-about-me-txt">
-                During my fourth year at Robert Gordon University, I had the privilege of completing a year long software development internship with <a href="https://imenco.no/">Imenco</a>. 
+                During my fourth year at Robert Gordon University, I had the privilege of completing a year-long software development internship with <a href="https://imenco.no/">Imenco</a>. 
                 As the main developer on a significant project, I collaborated closely with the Imenco team over the course of a year, 
                 contributing to the project's success and gaining invaluable experience in the field.
             </p>  
@@ -170,6 +170,13 @@
                     <p>Node.js</p>
                 </div>
                 <div class="skill-cell">
+                    <div class="white-border">
+                        <img title="TypeScript" alt="TypeScript icon" class="icon-skill-img" src="./images/typescript.png">
+                    </div>
+                    <p>TypeScript</p>
+                </div>
+                
+                <div class="skill-cell">
                     <img title="Java" alt="Java icon" class="icon-skill-img" src="./images/java.png">
                     <p>Java</p>
                 </div>
@@ -209,7 +216,14 @@
         <h2 id="projects-title">Some of my projects</h2>
         <div class="projects-div">
             <div class="row1 animate__animated animate__pulse">
-
+                <div class="project-cell project-container">
+                    <a class="no-underline" target="_blank" href="https://github.com/o-souter/Carbs_Concept">
+                        <img title="Click to view project on GitHub" alt="A picture of my project, CARBS" class="project-img" src="./images/carbs_icon.webp">
+                    </a>   
+                    <p class="project-title">CARBS (MSci Project)</p> 
+                    <p class="project-description">An android app to help people with diabetes count carbohydrates using AI and their phone's camera</p>
+                </div>
+                <div class="space-between-cell"></div>
                 <div class="project-cell project-container">
                     <a class="no-underline" target="_blank" href="https://github.com/o-souter/AdvancedAICW/blob/main/AdvancedAICW.ipynb">
                         <img title="Click to view project on GitHub" alt="The icon of my Advanced AI coursework paper" class="project-img" src="./images/advancedai.png">
@@ -250,7 +264,7 @@
                         <img title="Click to view project on GitHub" alt="A picture of my project, P.H.I.L" class="project-img" src="./images/phil.png">
                     </a>   
                     <p class="project-title">P.H.I.L</p> 
-                    <p class="project-description">A prototype smart-home alarm system for the elderly and vulnerable</p>
+                    <p class="project-description">A prototype smart-home alarm system and IoT device for the elderly and vulnerable</p>
                 </div>
                 <div class="space-between-cell"></div>
                 <!-- <div class="project-cell project-container">
@@ -260,14 +274,7 @@
                     <p class="project-title">Password Generator</p> 
                     <p class="project-description">A useful application which generates very secure passwords </p>
                 </div> -->
-                <div class="project-cell project-container">
-                    <a class="no-underline" target="_blank" href="https://github.com/o-souter/dadjokebot">
-                        <img title="Click to view project on GitHub" alt="The icon of my discord bot, dadjokebot" class="project-img" src="./images/discord.png">
-                    </a>   
-                    <p class="project-title">dadjokebot</p> 
-                    <p class="project-description">A discord bot that uses <a href="https://icanhazdadjoke.com">icanhazdadjoke.com</a>'s API to tell dad jokes</p>
-                </div>
-
+                
                 <div class="project-cell project-container">
                     <a class="no-underline" target="_blank" href="https://github.com/o-souter/elementz-globe">
                         <img title="Click to view project on GitHub" alt="The icon of my project, elementz globe" class="project-img" src="./images/elementz-globe.png">
@@ -279,7 +286,7 @@
             </div>
         </div>
     </section>
-    <section id="contactme">
+    <!-- <section id="contactme">
         <h2 id="contactme-title">Contact me</h2>
         <div class="contact-form-div" id="contact-form-div">
             <div class="form">
@@ -304,7 +311,7 @@
                     </form>
             </div>
         </div>
-    </section>
+    </section> -->
     <section id="findme">
         <h2>Where to find me</h2>
         <div class="findme-div">
@@ -314,6 +321,7 @@
                         <img title="Find me on LinkedIn" alt="LinkedIn icon" class="findme-img" src="./images/linkedin.png">
                     </a>   
                     <p class="findme-title">LinkedIn</p> 
+                    <p>Always open to thoughtful conversations and new ideas.</p>
                     <p class="findme-tag"><a href="https://www.linkedin.com/in/o-souter/">@o-souter</a></p>
                 </div>
 
@@ -322,6 +330,7 @@
                         <img title="Find me on GitHub" alt="Github icon" class="findme-img" src="./images/github.png">
                     </a>   
                     <p class="findme-title">GitHub</p> 
+                    <p>A peek into what I’ve been building and experimenting with.</p>
                     <p class="findme-tag"><a href="https://github.com/o-souter">@o-souter</a></p>
                 </div>
             </div>

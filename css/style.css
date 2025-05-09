@@ -11,7 +11,8 @@
     --secondary-colour: #00ff22;
     --primary-shadow: #ebebeb;
     --secondary-shadow:#B27F48;
-    --text-links:#007910;
+    --text-links-light:#009114;
+    --text-links-dark:#00ff22;
     --bottom-margin:0.5rem;
     --bottom-margin-other: 1rem;
     --line-height: 1.7rem;
@@ -42,7 +43,7 @@ body {
 }
 
 footer {
-    background-color: var(--primary-colour);
+    background-color: #9bd8e9;
     text-align: center;
     color:var(--background-colour);
     padding:2rem;
@@ -53,7 +54,7 @@ ul {
 }
 a {
     text-decoration:none;
-    color: var(--text-links);
+    color: var(--text-links-light);
 }
 
 
@@ -126,7 +127,7 @@ a:not(.no-underline):hover {
 
 /* Hero Section CSS */
 .hero-section {
-    scroll-margin-top: 150px;
+    scroll-margin-top: 8em;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -146,6 +147,9 @@ a:not(.no-underline):hover {
     box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
 
+.intro-links {
+    color: var(--text-links-dark);
+}
 
 .cmdwrite h2 {
     overflow: hidden;
@@ -181,7 +185,7 @@ a:not(.no-underline):hover {
 
 #more-about-me {
     
-    scroll-margin-top: 150px;
+    scroll-margin-top: 8em;
     background-color: #9bd8e9;
     padding: var(--page-padding);
 }
@@ -206,7 +210,7 @@ a:not(.no-underline):hover {
 
 /* Skills section CSS */
 .skills {
-    scroll-margin-top: 165px;
+    scroll-margin-top: 10em;
     max-width: 70rem;
     margin:auto;
     text-align:center;
@@ -263,7 +267,7 @@ a:not(.no-underline):hover {
 /*Projects Section */
 
 .projects {
-    scroll-margin-top: 145px;
+    scroll-margin-top: 8em;
     background-color: var(--primary-colour);
     padding:32px 0;
     margin-top:2rem;
@@ -327,7 +331,7 @@ a:not(.no-underline):hover {
 
 /* Contact section CSS*/
 #contactme {
-    scroll-margin-top: 165px;
+    scroll-margin-top: 8em;
     margin:2rem;
 }
 #contactme h2 {
@@ -397,10 +401,10 @@ a:not(.no-underline):hover {
 
 
 #findme {
-    scroll-margin-top: 150px;
-    background-color: var(--primary-colour);
+    scroll-margin-top: 8em;
+    background-color: #9bd8e9;
     padding:32px 0;
-    margin-top:2rem;
+    /* margin-top:2rem; */
     /*max-width: 70rem;
     margin:auto;
     text-align:center;
@@ -410,7 +414,7 @@ a:not(.no-underline):hover {
 #findme h2 {
     text-align: center;
 }
-#findme #findme-title{
+#findme .findme-title{
     text-align: center;
     font-weight: var(--bold-font);
     /*margin-bottom: 1rem;*/
